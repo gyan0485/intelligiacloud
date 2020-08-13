@@ -356,7 +356,6 @@ header * {
 .email-block {
     background-color: #DE432A;
     padding: 35px;
-    background-image: url('assets/images/mail-bg.png');
     background-repeat: no-repeat;
     background-position: right 20px bottom -30px;
     overflow: hidden;
@@ -409,12 +408,10 @@ header * {
 .btn-send {
     width: 60px;
     height: 54px;
-    background-image: url('assets/images/btn-send.png');
     background-repeat: no-repeat;
     background-position: center;
     border: 0;
     background-color: transparent;
-    font-size: 0;
 }
 .btn-send:focus {
     outline: 0;
