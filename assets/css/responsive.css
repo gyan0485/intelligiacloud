@@ -207,6 +207,10 @@
     .banner-content p {
         line-height: 24px;
     }
+    .banner-section {
+        padding: 160px 0;
+        background-position: top right -160px;
+    }
     /* === End CSS for Banner section === */
 
     /* CSS for Home about section */
@@ -527,7 +531,7 @@
     }
     .banner-section {
         padding: 60px 0;
-        background: linear-gradient(to top, #f5fbfd, #ffffff);
+        background: linear-gradient(to top, #f5fbfd, #ffffff)!important;
     }
     footer {
         padding: 20px 0;
