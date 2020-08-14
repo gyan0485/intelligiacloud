@@ -62,18 +62,19 @@ a:focus {
     padding: 9px 38px;
 }
 .btn:hover {
-    -webkit-box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
-    -ms-box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
-    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    -moz-transform: scale(1.03);
     transform: scale(1.03);
 }
 .btn-pink {
     background-color: #FF8080;
     color: #fff;
 }
-.btn-pink:hover {
-    background-color: #f6676b;
+.btn-pink:hover,
+.btn-pink:focus,
+.btn-pink:active {
+    background-color: #5793ce;
     color: #fff;
 }
 /* === CSS for Buttons === */
@@ -96,15 +97,17 @@ a:focus {
 /* === CSS for Common Transition === */
 .btn,
 .btn:hover,
+.banner-content .btn span,
+.banner-content .btn:hover span,
 .nav-item .nav-link,
 .nav-item .nav-link:hover,
 .nav-item .nav-link:after,
 .nav-item .nav-link:hover:after ,
-.transition-25ms {
-    -webkit-transition: all .25s ease-in-out;
-    -moz-transition: all .25s ease-in-out;
-    -ms-transition: all .25s ease-in-out;
-    transition: all .25s ease-in-out;
+.transition-3ms {
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 /* === End CSS for Common Transition === */
 
@@ -174,13 +177,6 @@ header * {
     background-position: top right;
     background-size: contain;
 }
-.banner-bg {
-    padding-bottom: 92%;
-    width: 100%;
-    min-height: 500px;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 .banner-content {
     max-width: 530px;
 }
@@ -206,6 +202,11 @@ header * {
     top: 0;
     line-height: 38px;
     text-align: center;
+}
+.banner-content .btn:hover span,
+.banner-content .btn:focus span,
+.banner-content .btn:active span {
+    background: #2f6eac;
 }
 /* === End CSS for Banner section === */
 
@@ -504,10 +505,6 @@ footer * {
     visibility: hidden;
     pointer-events: none;
     background-color: #e65757;
-    -webkit-box-shadow:0px 3px 7px 4px rgba(0,0,0,.25);
-    -ms-box-shadow:0px 3px 7px 4px rgba(0,0,0,.25);
-    -moz-box-shadow:0px 3px 7px 4px rgba(0,0,0,.25);
-    box-shadow:0px 3px 7px 4px rgba(0,0,0,.25);
     -webkit-transition: all .35s ease-in-out;
     -ms-transition: all .35s ease-in-out;
     -moz-transition: all .35s ease-in-out;
@@ -532,6 +529,7 @@ footer * {
     transform: rotate(45deg);
 }
 .back-to-top:hover {
+    background-color: #5793ce;
     -webkit-transform: scale(1.15);
     -ms-transform: scale(1.15);
     -moz-transform: scale(1.15);
