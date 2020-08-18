@@ -177,7 +177,7 @@ header * {
     width: 6px;
     transform: rotate(45deg);
     position: absolute;
-    top: 7px;
+    top: 16px;
     right: 2px;
 }
 /* === End CSS for Header section === */

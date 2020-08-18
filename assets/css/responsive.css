@@ -33,7 +33,10 @@
         padding-top: 0rem;
         padding-bottom: 0rem;
     }
-
+    .navbar-expand-lg .navbar-nav > li > .nav-link {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
     /* === CSS for Our Products section === */
     .products-section > .product-item .product-details {
         padding-left: 10px;
@@ -354,7 +357,7 @@
         color: #fff;
     }
     .navbar-nav .nav-item + .nav-item {
-        margin-top: 25px;
+        margin-top: 10px;
     }
     .navbar-nav li a {
         transform: translateY(10px);
@@ -403,7 +406,6 @@
     .hs-has-sub-menu > .nav-link:before {
         border-bottom: 1px solid #fff;
         border-right: 1px solid #fff;
-        top: 5px;
     }
     .hs-sub-menu {
         background: transparent;
