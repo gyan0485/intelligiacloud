@@ -152,7 +152,7 @@ header * {
     color: #000;
     font-weight: 400;
 }
-.nav-item.active .nav-link {
+.nav-item.active > .nav-link {
     font-weight: 600;
 }
 .header-section,
