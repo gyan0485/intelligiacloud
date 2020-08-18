@@ -4,8 +4,8 @@
 }
 
 .hs-menu-initialized .animated {
-	-webkit-animation-duration: 300ms;
-					animation-duration: 300ms;
+	-webkit-animation-duration: 600ms;
+					animation-duration: 600ms;
 }
 
 .hs-overflow-x-locked {
