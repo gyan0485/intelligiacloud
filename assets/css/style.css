@@ -158,7 +158,8 @@ header * {
 .header-section,
 .navbar,
 .navbar-brand,
-.navbar-brand img {
+.header-section.fix-header .navbar-brand img,
+.header-section.fix-header .navbar-brand img {
     -moz-transition: all 0.25s ease 0s;
     -o-transition: all 0.25s ease 0s;
     -webkit-transition: all 0.25s ease 0s;
@@ -166,6 +167,18 @@ header * {
 }
 .navbar-brand {
     padding: 0;
+}
+.hs-has-sub-menu > .nav-link:before { 
+    content: '';
+    display: inline-block;
+    border-bottom: 1px solid #000000;
+    border-right: 1px solid #000000;
+    height: 6px;
+    width: 6px;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 7px;
+    right: 2px;
 }
 /* === End CSS for Header section === */
 
@@ -218,7 +231,18 @@ header * {
     max-width: 1040px;
 }
 /* End CSS for Home about section */
-
+.chartjs-size-monitor, .chartjs-size-monitor-expand, .chartjs-size-monitor-shrink {
+    position: absolute;
+    direction: ltr;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    pointer-events: none;
+    visibility: hidden;
+    z-index: -1;
+}
 /* === CSS for Our Products section === */
 .products-section-heading h2 {
     font-size: 10.5vw;

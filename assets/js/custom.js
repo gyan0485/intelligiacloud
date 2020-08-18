@@ -1,4 +1,14 @@
+$(window).on("load", function() {
+    $(".js-mega-menu").HSMegaMenu({
+        event: "hover",
+        pageContainer: $(".container"),
+        breakpoint: 992,
+        hideTimeOut: 0
+    })
+}),
 $(document).ready(function(){
+    $.HSCore.components.HSHeader.init($("#header"));
+
     // Sticky Header
     var win = $(this);
     var winWdt = win.width();

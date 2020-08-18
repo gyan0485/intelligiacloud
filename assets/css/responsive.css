@@ -100,6 +100,10 @@
 @media (min-width: 992px) { 
 
     /* === CSS for Header section === */
+    .fixed-top {
+        position: fixed!important;
+        z-index: 1030!important;
+    }
     .header-section .fixed-top {
         padding-top: 30px;
         padding-bottom: 30px;
@@ -297,7 +301,7 @@
         opacity: 1;
         pointer-events: all;
         bottom: 0;
-        padding: 100px 50px;
+        padding: 100px 40px;
         -webkit-transition-delay: 0;
         -moz-transition-delay: 0;
         -ms-transition-delay: 0;
@@ -395,6 +399,15 @@
         -moz-transition-delay: 1s;
         -ms-transition-delay: 1s;
         transition-delay: 1s;
+    }
+    .hs-has-sub-menu > .nav-link:before {
+        border-bottom: 1px solid #fff;
+        border-right: 1px solid #fff;
+        top: 5px;
+    }
+    .hs-sub-menu {
+        background: transparent;
+        padding: 10px 20px 0;
     }
     /* === End CSS for Header section === */
 
