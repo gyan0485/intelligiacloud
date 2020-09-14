@@ -157,8 +157,9 @@ header * {
 }
 .header-section,
 .navbar,
+.fix-header .navbar,
 .navbar-brand,
-.header-section.fix-header .navbar-brand img,
+.header-section .navbar-brand img,
 .header-section.fix-header .navbar-brand img {
     -moz-transition: all 0.25s ease 0s;
     -o-transition: all 0.25s ease 0s;
@@ -180,6 +181,12 @@ header * {
     top: 16px;
     right: 2px;
 }
+.header-section .navbar {
+    background-color: #fff;
+}
+.banner-section {
+    margin-top: 108px;
+}
 /* === End CSS for Header section === */
 
 /* === CSS for Banner section === */
@@ -187,14 +194,13 @@ header * {
     overflow: hidden;
     padding: 227px 0;
     background-repeat: no-repeat;
-    background-position: top right;
-    background-size: contain;
+    background-position: center;
+    background-size: cover;
 }
 .banner-content {
-    max-width: 530px;
+    max-width: 700px;
 }
 .banner-heading {
-    max-width: 355px;
     font-size: 46px;
 }
 .banner-content p {
