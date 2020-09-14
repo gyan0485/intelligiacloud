@@ -20,10 +20,8 @@ $(document).ready(function(){
             $(window).scroll(function (e) {
                 var scroll = $(window).scrollTop();
                 if (scroll >= 10) {
-                    // $('.header-section nav').addClass("fixed-top");
                     $('.header-section').addClass("fix-header");
                 } else {
-                    // $('.header-section nav').removeClass("fixed-top");
                     $('.header-section').removeClass("fix-header");
                 }
             });
