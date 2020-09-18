@@ -260,6 +260,9 @@
         padding: 0;
     }
     /* === End CSS for Contact section === */
+    .banner-section {
+        background-position: center right -32px;
+    }
 }
 
 /* Medium devices (tablets, less than 992px) */
