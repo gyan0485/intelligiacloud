@@ -134,6 +134,12 @@ a:focus {
 /* === End Common CSS === */
 
 /* === CSS for Header section === */
+.header-top-info {
+    position: relative;
+    z-index: 9999;
+    background: black;
+    padding: 5px;
+}
 header * {
     font-size: 14px;
 }
@@ -141,7 +147,7 @@ header * {
     content: '';
     width: 0;
     height: 3px;
-    background: #FF8080;
+    background: #009cea;
     border-radius: 50px;
     display: block;
 }
@@ -172,7 +178,7 @@ header * {
     font-weight: 800;
     font-size: 30px;
     line-height: 1;
-    color: #000;
+    color: #576971;
     max-width: 270px;
     display: inline-block;
     white-space: normal;
@@ -191,342 +197,184 @@ header * {
 }
 .header-section .navbar {
     background-color: #fff;
-}
-.banner-section {
-    margin-top: 100px;
+    box-shadow: 0px 0px 6px 3px rgba(0,0,0,.1);
 }
 /* === End CSS for Header section === */
 
 /* === CSS for Banner section === */
-.banner-section {
-    overflow: hidden;
-    padding: 227px 0;
+#banner-section {
+    width: 100%;
+    background-image: url(../images/banner-bg.png);
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-size: contain;
+    background-position: right center;
+    margin-top: 70px;
+    padding: 60px 0;
 }
-.banner-content {
-    max-width: 700px;
+#banner-section h1 {
+    margin: 0 0 20px 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #048bcc;
 }
-.banner-heading {
-    font-size: 46px;
-}
-.banner-content p {
-    line-height: 30px;
-}
-.banner-content .btn {
-    height: 44px;
-    padding: 11px 64px 11px 20px;
-    position: relative;
-}
-.banner-content .btn span {
-    height: 43px;
-    width: 43px;
-    background: #E55757;
-    border-radius: 100%;
-    position: absolute;
-    right: 0;
-    top: 0;
-    line-height: 38px;
-    text-align: center;
-}
-.banner-content .btn:hover span,
-.banner-content .btn:focus span,
-.banner-content .btn:active span {
-    background: #2f6eac;
+#banner-section .hero-img img {
+    width: 70%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: block;
 }
 /* === End CSS for Banner section === */
 
-/* CSS for Home about section */
-.abt-section {
-    padding: 150px 0;
-}
-.abt-section .container {
-    max-width: 1040px;
-}
-/* End CSS for Home about section */
-.chartjs-size-monitor, .chartjs-size-monitor-expand, .chartjs-size-monitor-shrink {
-    position: absolute;
-    direction: ltr;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    overflow: hidden;
-    pointer-events: none;
-    visibility: hidden;
-    z-index: -1;
-}
-/* === CSS for Our Products section === */
-.products-section-heading h2 {
-    font-size: 10.5vw;
-    color: #d2d2d2;
-    font-weight: 800;
-    line-height: 7.7vw;
-}
-.product-bg-text,
-.contact-bg-text {
-    color: #FCFCFC;
-}
-.product-bg-text h2,
-.contact-bg-text h2 {
-    font-size: 12.1vw;
-    font-weight: 800;
-    line-height: 9vw;
-}
-.product-bg-text {
-    top: -20px;
-    left: -35px;
-}
-.products-section > .product-item:nth-child(even) .product-bg-text {
-    top: 30px;
-    left: 10px;
-}
-.products-section-heading .container {
-    max-width: 1420px;
-}
-.products-section-heading {
-    padding-top: 100px;
-}
-.fade-white-gradient {
-    background: -webkit-linear-gradient(0deg, rgb(255 255 255) 0%, rgb(250 250 250) 100%);
-    background: linear-gradient(0deg, rgb(255 255 255) 0%, rgb(250 250 250) 100%);
-}
-.product-item {
-    padding: 80px 0 0px;
-    position: relative;
-    overflow: hidden;
-    background: -webkit-linear-gradient(0deg, rgb(255 255 255) 0%, rgb(250 250 250) 100%);
-    background: linear-gradient(0deg, rgb(255 255 255) 0%, rgb(250 250 250) 100%);
-}
-.product-count {
-    font-size: 8.83vw;
-    font-weight: 100;
-    line-height: 6.8vw;
-}
-.product-img {
-    max-width: 400px;
-}
-.product-img:after,
-.product-img > .img-block,
-.product-img .img-block:after {
-    -webkit-transition: all .35s ease-in-out;
-    -ms-transition: all .35s ease-in-out;
-    -moz-transition: all .35s ease-in-out;
-    transition: all .35s ease-in-out;
-}
-.product-img > .img-block {
-    position: relative;
-    padding-bottom: 100%;
-    background-position: center top;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    z-index: 9;
-}
-.product-img:after {
-    content: '';
-    border: 1px solid #707070;
-    display: block;
-    position: absolute;
-    left: -15px;
-    right: 15px;
-    bottom: 15px;
-    top: -15px;
-    z-index: 1;
-}
-.product-description {
-    max-width: 560px;
-    max-height: 215px;
-    overflow: hidden;
-}
-.product-img:hover:after {
-    top: -18px;
-    left: -18px;
-}
-.product-img:hover .img-block {
-    -webkit-transform: translate(3px, 3px);
-    -ms-transform: translate(3px, 3px);
-    -moz-transform: translate(3px, 3px);
-    transform: translate(3px, 3px);
-    -webkit-box-shadow: -10px -10px 15px 0px rgba(0, 0, 0, 0.05);
-    -ms-box-shadow: -10px -10px 15px 0px rgba(0, 0, 0, 0.05);
-    -moz-box-shadow: -10px -10px 15px 0px rgba(0, 0, 0, 0.05);
-    box-shadow: -10px -10px 15px 0px rgba(0, 0, 0, 0.05);
-}
-.product-img .img-block:after {
-    content: '';
-    position: absolute;
-    left: 50%;
-    right: 50%;
-    top: 50%;
-    bottom: 50%;
-    background: rgba(0,0,0,.1);
-    border-radius: 50%;
-}
-.product-img:hover .img-block:after {
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    border-radius: 0;
-}
-/* === End CSS for Our Products section === */
-
-/* === CSS for Counting Blokcs Gradient Section === */
-.counter-sections {
-    padding: 72px 0;
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: cover;
-}
-.counter-text p {
-    font-size: 22px;
-    font-weight: 600;
-    line-height: 22px;
-    padding-top: 10px;
-}
-.counter-icon {
-    height: 59px;
-}
-/* === End CSS for Counting Blokcs Gradient Section === */
-
-/* === CSS for Email Section  === */
-.email-section {
-    padding: 85px 0;
-}
-.email-heading-block .heading h2 {
-    font-size: 35px;
-}
-.email-block {
-    background-color: #DE432A;
-    padding: 35px;
-    background-repeat: no-repeat;
-    background-position: right 20px bottom -30px;
-    overflow: hidden;
-}
-.email-box-bg-text {
-    font-size: 65px;
-    left: 10px;
-    right: -20px;
-    bottom: -20px;
-    top: 10px;
-    font-weight: 700;
-    opacity: 0.08;
-}
-.email-block .email-heading-block {
-    width: 356px;
-    padding: 40px 35px;
-}
-.email-field-block {
-    width: calc(100% - 356px);
-    padding-left: 45px;
-}
-.email-heading-block .heading {
-    max-width: 200px;
-}
-.email-form {
-    max-width: 560px;
-}
-.email-form .form-control {
-    background-color: transparent;
-    border: 0;
-    border-bottom: 1px solid #DBDBDB;
-    -webkit-border-radius: 0;
-    border-radius: 0;
-    color: #fff;
-    padding-left: 0;
-    padding-right: 0;
-    padding-bottom: 15px;
-}
-.email-form .form-control::placeholder {
-    color: #fff;
-}
-.email-form .form-control:focus {
-    background-color: transparent;
-    border: 0;
-    border-bottom: 1px solid #DBDBDB;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    color: #fff;
-}
-.btn-send {
-    width: 60px;
-    height: 54px;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: 0;
-    background-color: transparent;
-}
-.btn-send:focus {
-    outline: 0;
-}
-.btn-send:hover {
-    -webkit-transform: scale(.95);
-    -ms-transform: scale(.95);
-    -moz-transform: scale(.95);
-    transform: scale(.95);
-}
-.email-field-block .font-18 {
-    line-height: 22px;
-}
-/* === End CSS for Email Section  === */
-
-/* === CSS for Contact section === */
-.contact-section {
-    padding: 65px 0;
-    background-repeat: no-repeat;
-    background-position: left center;
-    background-size: cover;
-    overflow: hidden;
-    position: relative;
-}
-.contact-block {
-    padding: 60px;
-    max-width: 590px;
-    margin-left: auto;
-}
-.contact-form .form-control {
-    color: #000000;
-    height: 42px;
-    padding: 12px 20px;
-    border: 1px solid #AEAEAE;
-    -webkit-border-radius: 3px;
-    -ms-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-}
-.contact-form textarea {
-    min-height: 100px;
-    resize: none;
-}
-.contact-bg-text h2 {
-    color: #FCFCFC;
-    opacity: .37;
-}
-.contact-bg-text {
-    top: 0px;
-    right: -20px;
-}
-/* === End CSS for Contact section === */
-
 /* === CSS for Footer section === */
-footer {
-    font-size: 12px;
-    padding: 30px 0;
-}
-footer * {
-    font-weight: 300;
-}
-.footer-links ul li {
+#footer {
+    background: #232323;
+    padding: 0 0 30px 0;
+    color: #fff;
+    font-size: 14px;
+  }
+  
+  #footer .footer-top {
+    background: #232323;
+    color: #fff;
+    padding: 60px 0 30px 0;
+    border-bottom: 1px solid #5a5a5a;
+  }
+  
+  #footer .footer-top .footer-info {
+    margin-bottom: 30px;
+  }
+  
+  #footer .footer-top .footer-info h3 {
+    font-size: 24px;
+    margin: 0 0 20px 0;
+    padding: 2px 0 2px 0;
+    line-height: 1;
+    font-weight: 700;
+  }
+  
+  #footer .footer-top .footer-info p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0;
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+  }
+  
+  #footer .footer-top .social-links a {
+    font-size: 18px;
     display: inline-block;
-    padding: 0 10px;
-}
-.footer-links ul li a {
+    background: #e9ecee;
     color: #000;
-}
-.footer-links ul li a:hover {
-    color: #FF8080;
-}
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+  }
+  
+  #footer .footer-top .social-links a:hover {
+    background: #009cea;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  #footer .footer-top h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    position: relative;
+    padding-bottom: 12px;
+  }
+  
+  #footer .footer-top .footer-links {
+    margin-bottom: 30px;
+  }
+  
+  #footer .footer-top .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #footer .footer-top .footer-links ul i {
+    padding-right: 2px;
+    color: #009cea;
+    font-size: 18px;
+    line-height: 1;
+    margin-left: -5px;
+  }
+  
+  #footer .footer-top .footer-links ul li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  #footer .footer-top .footer-links ul li:first-child {
+    padding-top: 0;
+  }
+  
+  #footer .footer-top .footer-links ul a {
+    color: #fff;
+    transition: 0.3s;
+    display: inline-block;
+    line-height: 1;
+  }
+  
+  #footer .footer-top .footer-links ul a:hover {
+    color: #009cea;
+  }
+  
+  #footer .footer-top .footer-newsletter form {
+    margin-top: 30px;
+    background: #fff;
+    padding: 6px 10px;
+    position: relative;
+    border-radius: 4px;
+    border: 1px solid #e3e7e9;
+  }
+  
+  #footer .footer-top .footer-newsletter form input[type="email"] {
+    border: 0;
+    padding: 4px;
+    width: calc(100% - 110px);
+  }
+  
+  #footer .footer-top .footer-newsletter form input[type="submit"] {
+    position: absolute;
+    top: -1px;
+    right: -2px;
+    bottom: -1px;
+    border: 0;
+    background: none;
+    font-size: 16px;
+    padding: 0 20px;
+    background: #009cea;
+    color: #fff;
+    transition: 0.3s;
+    border-radius: 0 4px 4px 0;
+  }
+  
+  #footer .footer-top .footer-newsletter form input[type="submit"]:hover {
+    background: #007ab7;
+  }
+  
+  #footer .copyright {
+    text-align: center;
+    padding-top: 30px;
+  }
+  
+  #footer .credits {
+    padding-top: 8px;
+    text-align: center;
+    font-size: 13px;
+    color: #364146;
+  }
+  
 /* === End CSS for Footer section === */
 
 
@@ -542,7 +390,7 @@ footer * {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    background-color: #e65757;
+    background-color: #009cea;
     -webkit-transition: all .35s ease-in-out;
     -ms-transition: all .35s ease-in-out;
     -moz-transition: all .35s ease-in-out;
@@ -574,120 +422,6 @@ footer * {
     transform: scale(1.15);
 }
 /* ========== End CSS for Back To Top Button ========== */
-
-/* === CSS for Our Product Page === */
-.inner-pages-wrapper {
-    background-repeat: no-repeat;
-    background-position: right -170px top -70px;
-}
-.gradient-blue {
-    background: #5793CE;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(252deg, #5793CE 0%, #285EA0 100%);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(252deg, #5793CE 0%, #285EA0 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-.inner-banner {
-    overflow: hidden;
-    padding: 66px 60px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    border-radius: 5px;
-}
-.banner-img {
-    padding-bottom: 82.135%;
-    max-width: 285px;
-    position: relative;
-}
-.banner-img img {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    height: 100%;
-    margin: auto;
-}
-.banner-bg-text {   
-    bottom: 0;
-    left: -5px;
-    right: 0;
-    letter-spacing: -2px;
-}
-.banner-bg-text h2 {
-    font-size: 18.51vw;
-    font-weight: 700;
-    line-height: 13.4vw;
-    color: #fff;
-    opacity: .09;
-}
-/* === CSS for Our Product Page === */
-
-/* === CSS for Static Content Block === */
-.static-content-section {
-    padding: 80px 0;
-}
-.static-content-section .container {
-    max-width: 1190px;
-}
-.static-content-section p {
-    font-weight: 300;
-}
-.static-content-section h4 {
-    font-weight: 600;
-    font-size: 22px;
-    line-height: 30px;
-}
-.content-blocks {
-    padding-top: 20px;
-}
-.content-blocks ol li + li,
-.content-blocks ul li + li {
-    margin-top: 12px;
-}
-ol.number-list > li {
-    list-style: decimal;
-    font-weight: 700;
-}
-ol.number-list {
-    padding-left: 18px;
-}
-.check-list > li {
-    padding-left: 28px;
-    position: relative;
-}
-.check-list > li:before {
-    content: '';
-    border-left: 3px solid #000;
-    border-bottom: 3px solid #000;
-    display: block;
-    position: absolute;
-    width: 12px;
-    height: 7px;
-    left: 0;
-    top: 12px;
-    -webkit-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-}
-.inner-pages-wrapper + .email-section {
-    padding-top: 25px!important;
-}
-/* === CSS for Static Content Block === */
-
-/* === CSS for Newsletter Headiing === */
-.newsletter-heading .container {
-    max-width: 1430px;
-}
-.newsletter-heading {
-    color: #FCFCFC;
-}
-.newsletter-heading h2 {
-    font-size: 12.935vw;
-    line-height: 10vw;
-    font-weight: 800;
-}
-/* === End CSS for Newsletter Headiing === */
 
 
 /* === CSS for Custom Animation === */
@@ -927,3 +661,105 @@ ol.number-list {
 }
 
 /* === End CSS for Custom Animation === */
+
+
+section {
+    padding: 60px 0;
+    overflow: hidden;
+}
+.section-bg {
+    background-color: #f3f3f3;
+}
+.section-title {
+    text-align: center;
+    padding-bottom: 30px;
+}
+.section-title h2 {
+    font-size: 42px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding-bottom: 0;
+    color: #627680;
+}
+.duties .icon-box {
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    margin: 15px 0;
+    background: #fff;
+    box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+    transition: all 0.3s ease-in-out;
+    border-radius: 12px;
+    text-align: center;
+    border-bottom: 3px solid #fff;
+}
+.duties .icon-box-cyan .icon i {
+    color: #3fcdc7;
+}
+.duties .icon i {
+    font-size: 48px;
+    line-height: 1;
+    margin-bottom: 15px;
+}
+.duties .title {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+.duties .description {
+    font-size: 15px;
+    line-height: 28px;
+    margin-bottom: 0;
+}
+.duties .icon-box-blue:hover {
+    border-color: #2282ff;
+}
+.duties .icon-box-blue .icon i {
+    color: #2282ff;
+}
+.duties .icon-box-pink:hover {
+    border-color: #ff689b;
+}
+.duties .icon-box-pink .icon i {
+    color: #ff689b;
+}
+.duties .icon-box-cyan:hover {
+    border-color: #3fcdc7;
+}
+.duties .icon-box-cyan .icon i {
+    color: #3fcdc7;
+}
+.duties .icon-box-green:hover {
+    border-color: #41cf2e;
+}
+.duties .icon-box-green .icon i {
+    color: #41cf2e;
+}
+.duties .icon-box-orange:hover {
+    border-color: #41cf2e;
+}
+.duties .icon-box-orange .icon i {
+    color: #ecae3b;
+}
+.duties .icon-box-red:hover {
+    border-color: #fd1414;
+}
+.duties .icon-box-red .icon i {
+    color: #fd1414;
+}
+.duties .icon-box-violet:hover {
+    border-color: #6e00ff;
+}
+.duties .icon-box-violet .icon i {
+    color: #6e00ff;
+}
+.duties .icon-box-darkPink:hover {
+    border-color: #9c009e;
+}
+.duties .icon-box-darkPink .icon i {
+    color: #9c009e;
+}
+
+.duties .icon-box:hover {
+    transform: translateY(-5px);
+}
