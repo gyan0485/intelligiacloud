@@ -51,6 +51,7 @@ $(document).ready(function(){
         easing: 'ease-in-out-back',
         duration: 1200,
         disable: false,
+        once: true
     });
 
 });

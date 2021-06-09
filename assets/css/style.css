@@ -204,26 +204,27 @@ header * {
 /* === CSS for Banner section === */
 #banner-section {
     width: 100%;
-    background-image: url(../images/banner-bg.png);
+    background-image: url(../images/banner.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position: right center;
-    margin-top: 70px;
-    padding: 60px 0;
+    background-size: 100%;
+    background-position: center;
+    margin-top: 90px;
+    padding: 14% 0;
+    /* min-height: 500px; */
 }
 #banner-section h1 {
     margin: 0 0 20px 0;
     font-size: 48px;
     font-weight: 700;
     line-height: 56px;
-    color: #048bcc;
+    color: #fff;
 }
-#banner-section .hero-img img {
+/*#banner-section .hero-img img {
     width: 70%;
     max-width: 600px;
     margin: 0 auto;
     display: block;
-}
+}*/
 /* === End CSS for Banner section === */
 
 /* === CSS for Footer section === */
@@ -675,11 +676,11 @@ section {
     padding-bottom: 30px;
 }
 .section-title h2 {
-    font-size: 42px;
-    font-weight: 600;
+    font-size: 52px;
+    font-weight: 700;
     margin-bottom: 20px;
     padding-bottom: 0;
-    color: #627680;
+    color: #000;
 }
 .duties .icon-box {
     padding: 30px;
@@ -707,7 +708,7 @@ section {
     font-size: 18px;
 }
 .duties .description {
-    font-size: 15px;
+    font-size: 20px;
     line-height: 28px;
     margin-bottom: 0;
 }
@@ -762,4 +763,37 @@ section {
 
 .duties .icon-box:hover {
     transform: translateY(-5px);
+}
+.black-overlay:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.435);
+}
+
+
+
+/* qualification section */
+
+.qualification .content .icon-box i {
+    font-size: 48px;
+    float: left;
+    color: #169cea;
+}
+.qualification .content .icon-box {
+    margin-top: 25px;
+}
+.qualification .content .icon-box h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 5px 0 10px 80px;
+    color:#575656;
+}
+.qualification .content .icon-box p {
+    font-size: 15px;
+    color: #848484;
+    margin-left: 80px;
 }
